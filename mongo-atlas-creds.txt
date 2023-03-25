@@ -1,0 +1,9 @@
+// Connects to MongoDB Atlas
+// mongoose.connect("mongodb+srv://mynewuser:Nbf9rzoDhcOWNcNW@cluster0.m7zlt.mongodb.net/kupa-angular")
+// .then(() => {
+//   console.log("Connected to database")
+// })
+// .catch((error) => {
+//   console.log(error);
+//   console.log("Connection failed");
+// })
