@@ -1,0 +1,43 @@
+
+
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-label {
+  font-weight: 500;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn-login {
+  background-color: #307a59;
+  border-color: transparent;
+}
+
+.signin-with-external img {
+  width: 20px;
+}
+
+.register-terms-block {
+  margin-top: 50%;
+}
+
+/* input {
+  padding: 15px 0 15px 15px;
+  border: 1px solid;
+  border-color: #DDD;
+  border-radius: 5px;
+} */

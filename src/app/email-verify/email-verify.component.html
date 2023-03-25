@@ -1,0 +1,52 @@
+<div class="container login-page">
+
+  <div>
+    <a href="" class="btnPrevious">
+      <span class="material-symbols-outlined">arrow_right_alt</span>
+    </a>
+  </div>
+
+  <h1 class="text-center">Verification Email</h1>
+
+  <h2 class="text-center">Please enter the code we just sent to email</h2>
+  <p class="text-center user-email">rifqyauxxx@gmail.com</p>
+  <p>&nbsp;</p>
+  <div class="row">
+    <div class="col text-center">
+      <span>
+        <input class="verify-code-input" type="number" matInput maxlength="1">
+      </span>
+      <span>
+        <input class="verify-code-input" type="number" matInput maxlength="1">
+      </span>
+      <span>
+        <input class="verify-code-input" type="number" matInput maxlength="1">
+      </span>
+      <span>
+        <input class="verify-code-input" type="number" matInput maxlength="1">
+      </span>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <div class="row">
+    <div class="col text-center">
+      <span class="gray-text">If you didn't receive a code?</span>&nbsp;<a href="#" class="forgot-pwd">Resend</a>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <div class="row">
+    <div class="col">
+      <!-- <mat-form-field class="full-width" appearance="outline"> -->
+        <button mat-button class="btn btn-primary btn-login">Continue</button>
+      <!-- </mat-form-field> -->
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <div class="row">
+    <div class="col">
+      <div class="numpad">
+        <button mat-button type="button" [id]="'num'+num" *ngFor="let num of numpads" (click)="onItemClick($event)">{{num}}</button>
+      </div>
+    </div>
+  </div>
+</div>

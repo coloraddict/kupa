@@ -1,0 +1,19 @@
+h1 {
+  font-weight: 700;
+  position: relative;
+}
+
+.notif-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.notif-icon img {
+  width: 30px;
+}
+
+p.text-right {
+  text-align: right;
+}

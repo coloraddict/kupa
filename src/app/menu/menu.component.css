@@ -1,0 +1,209 @@
+
+h1 {
+  color: #16a085;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 0;
+  color: #9b9aa0;
+}
+
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabs {
+  position: relative;
+  margin: 20px 0;
+  height: 14.75rem;
+}
+
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+
+.tabs::after {
+  clear: both;
+}
+
+.tab {
+  float: left;
+}
+
+.tab-switch {
+  display: none;
+}
+
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+}
+
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+
+.tab-content {
+  height: 12rem;
+  background: #fff;
+  color: #2c3e50;
+  transition: all 0.35s;
+  padding: 15px 0;
+}
+
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+}
+
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+.food-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.food-item li {
+  width: 48%;
+  padding: 2px;
+  margin: 0 5px 15px 0;
+}
+
+.food-item li img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.food-item li .food-name, .food-item li .food-price {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.food-item li .food-price {
+  color: #16a085;
+}
+
+.food-item li img {
+  margin-bottom: 5px;
+}
+
+
+/* Item detail popup */
+
+.popup {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.popup .item-details {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin-top: 50px;
+  padding: 50px 20px 20px 20px;
+  border-radius: 30px 30px 0 0;
+}
+
+.popup .item-photo {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.popup .item-photo img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.popup .details {
+  margin-top: 15px;
+}
+
+.popup .details h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.popup .item-photo-holder {
+  width: 100%;
+  padding: 20px 0 ;
+  background-color: #EEE;
+}
+
+.popup .minus, .popup .plus, .popup .count, .popup .price {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 11px;
+  margin-right: 10px;
+  color: #FFF;
+}
+
+.popup .minus, .popup .plus {
+  width: 20px;
+  height: 20px;
+  background-color: #16a085;
+  border-radius: 50%;
+}
+
+.popup .price {
+  margin-left: 20px;
+}
+
+.popup .count, .popup .price {
+  color: #333;
+}
+
+.popup .item-details h3 {
+  font-weight: 700;
+  color: #333;
+}
+
+.popup .btnCart {
+  width: 90%;
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  margin: 0 auto;
+  padding: 15px 0;
+  color: #FFF;
+  background-color: #16a085;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}

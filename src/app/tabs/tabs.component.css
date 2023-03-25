@@ -1,0 +1,42 @@
+.tabs-container {
+  /* width: 350px; */
+  height: 200px;
+  margin: 2px;
+}
+
+ul.nav-tabs {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content:space-betweeen;
+  overflow-x: scroll;
+  border: none;
+}
+
+ul.nav-tabs li.tab {
+  flex-basis: 40%;
+  flex-shrink: 0;
+}
+
+.tabs-container .tab {
+  padding: 5px;
+  text-align: center;
+  width: 50px;
+  cursor: pointer;
+  /* line-height: 2; */
+  text-decoration: none;
+}
+
+.tabs-container .tab:hover {
+  border-radius: 2px;
+  opacity: 90%;
+}
+
+.tabs-container .tab.active {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: underline;
+}

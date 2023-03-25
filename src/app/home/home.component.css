@@ -1,0 +1,94 @@
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.card.delivery-card {
+  color: white;
+  border-radius: 10px;
+  background-color: #307a59;
+  position: relative;
+}
+
+.card.delivery-card .card-body i {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.card.delivery-card .card-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card.delivery-card .info-pills {
+  padding: 5px 10px;
+  background: #FFF;
+  border-radius: 20px;
+  color: #307a59;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.card.item-card {
+  background-color: #EEE;
+  position: relative;
+}
+
+.card.item-card .card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card.item-card .card-text {
+  font-size: 15px;
+}
+
+.card.item-card button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #307a59;
+  border: none;
+  border-radius: 10px;
+}
+
+.card.item-card .food-thumb {
+  width: 150px;
+  position: absolute;
+  top: 15px;
+  right:0;
+}
+
+.card.item-card .food-thumb img {
+  width: 100%;
+}
+
+.food-item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.food-item li {
+  display: inline-block;
+  width: 33.33%;
+  padding: 2px;
+  margin: 5px;
+}
+
+.food-item li:first-child {
+  padding: 0;
+  margin: 0;
+}
+
+.food-item li img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}

@@ -1,1 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container.login-page {
+  padding: 20px 25px;
+}
+
+.container h1 {
+  font-family: roboto;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0 0 10px 0;
+}
+
+.container h2 {
+  color: #9b9aa0;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.container mat-label {
+  font-weight: 500;
+}
+
+.container .forgot-pwd {
+  font-family: roboto;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #307a59;
+}
+
+.container .btnPrevious {
+  display: block;
+  padding: 20px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.container .btnPrevious span {
+  font-size: 30px;
+  transform: rotate(180deg);
+}
+
+.container .gray-text {
+  font-family: roboto;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #9b9aa0;
+}
+
+.container .btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.container .btn-login {
+  background-color: #307a59;
+  border-color: transparent;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.spacer {
+  padding: 10px;
+}
+
+.global-search {
+  position: relative;
+  padding: 15px 10px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group-prepend {
+  position: absolute;
+  border: none;
+  box-shadow: none;
+}
+
+.global-search input {
+  padding: 10px 25px;
+  border: 1px solid #9b9aa0;
+}
+
+.global-search input::placeholder {
+  position: absolute;
+  left: 40px;
+  top: 13px;
+}
+
+.global-search i {
+  font-size: 20px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  z-index: 9;
+}

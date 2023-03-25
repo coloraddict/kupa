@@ -1,0 +1,84 @@
+<div class="container login-page">
+
+  <div>
+    <a href="" class="btnPrevious">
+      <span class="material-symbols-outlined">arrow_right_alt</span>
+    </a>
+  </div>
+
+  <h1>Welcome Back</h1>
+
+  <h2>Sign into your account</h2>
+  <br>
+
+  <form class="form" (submit)="onLogin(loginForm)" #loginForm="ngForm">
+    <div class="row">
+      <div class="col">
+        <mat-label>Email</mat-label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field>
+          <input matInput type="email" name="email" ngModel placeholder="Your email" #emailInput="ngModel" required email>
+          <mat-error *ngIf="emailInput.invalid">Please enter a valid email</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-label>Password</mat-label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field>
+          <input matInput type="password" placeholder="Your password" name="password" ngModel #passwordInput="ngModel" required>
+          <mat-error *ngIf="passwordInput.invalid">Please enter a password</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <a [routerLink]="['/forgot']" routerLinkActive="router-link-active"  class="forgot-pwd">Forgot Password?</a>
+    <p></p>
+    <div class="row">
+      <div class="col">
+          <button mat-button class="btn btn-primary btn-login" type="submit">Login</button>
+      </div>
+    </div>
+  </form>
+  <p></p>
+  <div class="row">
+    <div class="col text-center">
+      <span class="gray-text">Dont't have an account?</span>&nbsp;<a [routerLink]="['/signup']" class="forgot-pwd">Sign Up</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col"><p>&nbsp;</p></div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <div class="custom-hr">
+        <span> Or with </span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col"><p>&nbsp;</p></div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-outline-primary signin-with-external">
+        <img src="assets/images/icons8-google-48.png" />&nbsp;&nbsp;
+        Sign in with Google
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-outline-primary signin-with-external">
+        <img src="assets/images/icons8-apple-logo-50.png" />&nbsp;&nbsp;
+        Signin with Apple
+      </button>
+    </div>
+  </div>
+</div>

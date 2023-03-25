@@ -1,0 +1,76 @@
+<div class="container login-page">
+
+  <div>
+    <a href="" class="btnPrevious">
+      <span class="material-symbols-outlined">arrow_right_alt</span>
+    </a>
+  </div>
+
+  <h1>Sign Up</h1>
+
+  <h2>Create account and choose favourite menu</h2>
+  <br>
+
+  <form class="form" (submit)="onSignup(signupForm)" #signupForm="ngForm">
+    <div class="row">
+      <div class="col">
+        <mat-label>Name</mat-label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput type="name" name="name" ngModel placeholder="Your name" #nameInput="ngModel" required>
+          <mat-error *ngIf="nameInput.invalid">Please enter a name</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-label>Email</mat-label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput type="email" name="email" ngModel placeholder="Your email" #emailInput="ngModel" required email>
+          <mat-error *ngIf="emailInput.invalid">Please enter an email</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-label>Password</mat-label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput type="password" name="password" ngModel placeholder="Your password" #passwordInput="ngModel" required>
+          <mat-error *ngIf="passwordInput.invalid">Please enter password</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button type="submit" mat-button class="btn btn-primary btn-login">Register</button>
+      </div>
+    </div>
+  </form>
+  <p>&nbsp;</p>
+  <div class="row">
+    <div class="col text-center">
+      <span class="gray-text">Have an account?</span>&nbsp;<a [routerLink]="['/login']" routerLinkActive="router-link-active"  class="forgot-pwd">Sign In</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col"><p>&nbsp;</p></div>
+  </div>
+  <div class="row register-terms-block">
+    <div class="col text-center">
+      <span class="gray-text">By clicking Register, you agree to our</span>
+      <br>
+      <a href="#" class="forgot-pwd">Terms and Data Policy</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+ul {
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #EEE;
+  position: fixed;
+  bottom: 0;
+  margin-left: -12px;
+  margin-bottom: 0px;
+  z-index: 99;
+}
+
+ul li {
+  width: 20%;
+  padding: 10px 15px 0 0;
+  text-align: center;
+  border-right: 1px solid #9b9aa0;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+ul li img {
+  width: 30px;
+}

@@ -1,0 +1,24 @@
+<div class="splash" [@openClose]="splashScreenTime ? 'open' : 'closed'">
+  <img src="assets/images/logo.jpg" alt="">
+</div>
+
+<div class="container">
+  <div class="splash-header">
+    <img src="assets/images/header-logo.jpg" alt="">
+  </div>
+
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide><img src="assets/images/splash_1.jpg" width="250px"></ng-template>
+    <ng-template carouselSlide><img src="assets/images/splash_2.jpg" width="250px"></ng-template>
+  </owl-carousel-o>
+</div>
+
+<p class="splash-title">All your favourite foods</p>
+
+<p class="splash-subtitle">Order your favourite menu with easy on-demand delivery</p>
+
+<div class="actions">
+  <button mat-button class="btn btn-primary btn-continue" (click)="onContinue()">Continue</button>
+  <div class="spacer">&nbsp;</div>
+  <button mat-button class="btn btn-primary btn-signin" (click)="onContinue()">Sign in</button>
+</div>
