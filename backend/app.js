@@ -18,15 +18,7 @@ mongoose.connect("mongodb://0.0.0.0:27017/kupa-angular")
   console.log("Connection failed");
 })
 
-// Connects to MongoDB Atlas
-// mongoose.connect("mongodb+srv://mynewuser:Nbf9rzoDhcOWNcNW@cluster0.m7zlt.mongodb.net/kupa-angular")
-// .then(() => {
-//   console.log("Connected to database")
-// })
-// .catch((error) => {
-//   console.log(error);
-//   console.log("Connection failed");
-// })
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
