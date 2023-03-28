@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  selectedPage: string;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectPage(page: string){
+    this.selectedPage = page;
   }
 
 }

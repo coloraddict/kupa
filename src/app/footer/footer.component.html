@@ -1,26 +1,26 @@
 <ul>
   <li>
-    <div>
-      <img src="assets/images/home_FILL0_wght400_GRAD0_opsz48.png" alt="">
-    </div>
-    <p>Home</p>
+    <a routerLink="/home" (click)="selectPage('home')" [ngClass]="{'active': selectedPage === 'home'}">
+      <i class="fa-solid fa-house"></i>
+      <p>Home</p>
+    </a>
   </li>
   <li>
-    <div>
+    <a routerLink="/menu">
       <img src="assets/images/restaurant_menu_FILL0_wght400_GRAD0_opsz48.png" alt="">
-    </div>
-    Menu
+      <p>Menu</p>
+    </a>
   </li>
   <li>
-    <div>
+    <a>
       <img src="assets/images/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" alt="">
-    </div>
-    Cart
+      <p>Cart</p>
+    </a>
   </li>
   <li>
-    <div>
+    <a>
       <img src="assets/images/person_FILL0_wght400_GRAD0_opsz48.png" alt="">
-    </div>
-    Profile
+      <p>Profile</p>
+    </a>
   </li>
 </ul>
